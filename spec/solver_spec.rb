@@ -24,9 +24,16 @@ describe Solver do
       end
     end
 
-    describe 'Testing factorial method with Exception' do
-      it 'will test the `factorial` of negative number should raise error' do
-        expect {@solver.factorial(1)}.to raise_error(RuntimeError)
+    # PLEASE UNCOMMENT BELOW CODE TO CHECK THE EXCEPTIONAL CASE
+    # describe 'Testing factorial method with Exception' do
+    #   it 'will test the `factorial` of negative number should raise error' do
+    #     expect {@solver.factorial(1)}.to raise_error(RuntimeError)
+    #   end
+    # end
+
+    describe 'Testing Reverse Method' do
+      it 'will test method and "hello" should "olleh"' do
+        expect(@solver.reverse('hello')).to eql('olleh')
       end
     end
   end
