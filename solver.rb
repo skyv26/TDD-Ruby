@@ -7,7 +7,7 @@ class Solver
 
   def factorial(num)
     @exception.msg('factorial') if num.negative?
-    return num if [1, 0].include?(num)
+    return 1 if [1, 0].include?(num)
 
     num * factorial(num - 1)
   end
