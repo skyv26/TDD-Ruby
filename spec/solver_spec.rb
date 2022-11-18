@@ -35,6 +35,30 @@ describe Solver do
       it 'will test method and "hello" should "olleh"' do
         expect(@solver.reverse('hello')).to eql('olleh')
       end
+
+      # PLEASE UNCOMMENT BELOW CODE TO CHECK THE EXCEPTIONAL CASE
+      # it 'will test method with 78 should raise error' do
+      #   expect(@solver.reverse(78)).to raise_error(RuntimeError)
+      # end
+    end
+
+    describe 'Testing FizzBuzz Method' do
+      it 'will test method and for 3 resultant should be "fizz"' do
+        expect(@solver.fizzbuzz(9)).to eql('fizz')
+      end
+
+      it 'will test method and for 5 resultant should be "fizz"' do
+        expect(@solver.fizzbuzz(10)).to eql('buzz')
+      end
+
+      it 'will test method and for 15 resultant should be "fizz"' do
+        expect(@solver.fizzbuzz(15)).to eql('fizzbuzz')
+      end
+
+      # PLEASE UNCOMMENT BELOW CODE TO CHECK THE EXCEPTIONAL CASE
+      # it 'will test method with '78' should raise error' do
+      #   expect(@solver.reverse('15')).to raise_error(RuntimeError)
+      # end
     end
   end
 end
