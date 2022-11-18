@@ -41,10 +41,11 @@ describe Solver do
       it 'will test method and for 15 resultant should be "fizz"' do
         expect(@solver.fizzbuzz(15)).to eql('fizzbuzz')
       end
+      
+      it 'will test method and for 7 resultant should be "7"' do
+        expect(@solver.fizzbuzz(7)).to eql('7')
+      end
 
-      # it 'will test method with '78' should raise error' do
-      #   expect(@solver.reverse('15')).to raise_error(RuntimeError)
-      # end
     end
   end
 end
